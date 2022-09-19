@@ -1,10 +1,9 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { Router } from 'react-router-dom';
+import { act } from 'react-dom/test-utils';
 import App from '../App';
 import renderWithRouter from '../renderWithRouter';
-import { act } from 'react-dom/test-utils';
 
 describe('Testando o componente App', () => {
   it('Testa se a apicação é redirecionada ao clicar no botão Home', () => {
